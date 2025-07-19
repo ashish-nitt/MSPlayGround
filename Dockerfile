@@ -10,7 +10,7 @@ FROM centos:7
 LABEL maintainer="Ashish <ashish_nitt@yahoo.co.in>"
 
 FROM openjdk:21
-COPY --from=build /app/target/mal-randomizer-0.0.1-SNAPSHOT.jar /app/app.jar
+COPY --from=build /app/target/MSPlayGround-0.0.1-SNAPSHOT.jar /app/app.jar
 
 # Set the working directory inside the container
 WORKDIR /app
