@@ -7,7 +7,7 @@ RUN mvn clean package -DskipTests
 
 # Stage 2: Create the final image with CentOS and OpenJDK
 FROM centos:7
-LABEL maintainer="Your Name <your.email@example.com>"
+LABEL maintainer="Ashish <ashish_nitt@yahoo.co.in>"
 
 # Install OpenJDK 17
 RUN yum install -y java-21-openjdk-headless
