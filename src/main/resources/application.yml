@@ -10,4 +10,5 @@ log4j:
         orm:
           jpa=DEBUG
         transaction: DEBUG
-
+server:
+  port: 9090
