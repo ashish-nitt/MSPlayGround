@@ -1,0 +1,13 @@
+spring:
+  h2:
+    console:
+      enabled: true
+
+log4j:
+  logger:
+    org:
+      springframework:
+        orm:
+          jpa=DEBUG
+        transaction: DEBUG
+
