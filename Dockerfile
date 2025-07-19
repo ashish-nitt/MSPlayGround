@@ -9,12 +9,8 @@ RUN mvn clean package -DskipTests
 FROM centos:7
 LABEL maintainer="Ashish <ashish_nitt@yahoo.co.in>"
 
-# Install OpenJDK 17
-RUN yum install -y java-21-openjdk-headless
-RUN yum clean all
-
-# Install OpenJDK 21
-RUN dnf install java-21-openjdk
+FROM openjdk:21
+COPY --from=build /app/target/mal-randomizer-0.0.1-SNAPSHOT.jar /app/app.jar
 
 # Set the working directory inside the container
 WORKDIR /app
