@@ -10,7 +10,11 @@ FROM centos:7
 LABEL maintainer="Your Name <your.email@example.com>"
 
 # Install OpenJDK 17
-RUN yum install -y java-17-openjdk-headless && yum clean all
+RUN yum install -y java-21-openjdk-headless
+RUN yum clean all
+
+# Install OpenJDK 21
+RUN dnf install java-21-openjdk
 
 # Set the working directory inside the container
 WORKDIR /app
