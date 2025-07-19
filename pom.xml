@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.ashish</groupId>
-	<artifactId>SpringTransactionPropagationExamples</artifactId>
+	<artifactId>MSPlayGround</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>SpringTransactionPropagationExamples</name>
+	<name>MSPlayGround</name>
 	<description>Demo project for Spring Scheduler with @Scheduled</description>
 
 	<parent>
